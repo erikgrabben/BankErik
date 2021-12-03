@@ -1,0 +1,39 @@
+{
+ "properties": {
+  "displayName": "PolicyDef-Test",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "Allowed location",
+  "metadata": {
+   "category": "Compute",
+   "createdBy": "4733ac0d-59cb-4b33-9f33-91dad33a093c",
+   "createdOn": "2021-12-03T08:25:32.4808924Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "allowedLocations": {
+    "type": "Array",
+    "metadata": {
+     "displayName": "Allowed locations",
+     "description": "The list of allowed locations for resources.",
+     "strongType": "location"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "not": {
+     "field": "location",
+     "in": "[parameters('allowedLocations')]"
+    }
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/subscriptions/c41ec4c2-0707-4ab2-a6df-992bb5812424/providers/Microsoft.Authorization/policyDefinitions/de1b8b88-ab87-4279-8475-8a8ef0e29cbf",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "de1b8b88-ab87-4279-8475-8a8ef0e29cbf"
+}

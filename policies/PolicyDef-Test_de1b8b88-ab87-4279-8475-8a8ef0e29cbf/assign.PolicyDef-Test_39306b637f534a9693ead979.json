@@ -1,0 +1,34 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "PolicyDef-Test",
+  "policyDefinitionId": "/subscriptions/c41ec4c2-0707-4ab2-a6df-992bb5812424/providers/Microsoft.Authorization/policyDefinitions/de1b8b88-ab87-4279-8475-8a8ef0e29cbf",
+  "scope": "/subscriptions/c41ec4c2-0707-4ab2-a6df-992bb5812424",
+  "notScopes": [],
+  "parameters": {
+   "allowedLocations": {
+    "value": [
+     "northeurope"
+    ]
+   }
+  },
+  "description": "",
+  "metadata": {
+   "assignedBy": "Olle Ergon",
+   "parameterScopes": {
+    "allowedLocations": "/subscriptions/c41ec4c2-0707-4ab2-a6df-992bb5812424"
+   },
+   "createdBy": "4733ac0d-59cb-4b33-9f33-91dad33a093c",
+   "createdOn": "2021-12-03T08:27:37.8385589Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/c41ec4c2-0707-4ab2-a6df-992bb5812424/providers/Microsoft.Authorization/policyAssignments/39306b637f534a9693ead979",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "39306b637f534a9693ead979"
+}
